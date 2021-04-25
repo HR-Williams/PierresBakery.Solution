@@ -6,7 +6,7 @@
 
 ## Description
 
-A little app that lets the user order and returns a total cost.
+A little program that lets the user order and returns a total cost.
 
 ## Specifications
 <!-- | Specification | Example Input | Example Output |
@@ -16,7 +16,7 @@ A little app that lets the user order and returns a total cost.
 
 * _Open the terminal on your local machine_
 * _If C# is not installed on your local device, follow the instructions [here](https://www.learnhowtoprogram.com/c-and-net-part-time-c-and-react-track/getting-started-with-c/installing-c-and-net)_
-* _Clone this project with the following command `$ https://github.com/HR-Williams/PierresBakery.Solution`_
+* _Clone this project with the following command `$ git clone https://github.com/HR-Williams/PierresBakery.Solution`_
 * _Navigate to the top level of the repository_
 * _At the root directory for this project enter the command `$ dotnet build` then enter the command `$ dotnet run`_
 
