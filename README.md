@@ -1,6 +1,6 @@
 # PierresBakery - Console Order and Receipt App
 
-#### C# TDD Independent Project
+#### Epicodus C# TDD Independent Project
 
 #### By _**HR Williams**_
 
