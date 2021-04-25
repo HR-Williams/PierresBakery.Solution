@@ -7,7 +7,11 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
 
-    // Test methods will go here.
-
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
   }
-}
+} 
