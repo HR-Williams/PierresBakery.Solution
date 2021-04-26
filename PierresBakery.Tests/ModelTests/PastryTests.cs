@@ -13,5 +13,13 @@ namespace PierresBakery.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string description = "Pierre's Pastry";
+      Pastry newPastry = new Pastry(description);
+      string result = newPastry.Description;
+      Assert.AreEqual(description, result);
+    }
   }
 } 
