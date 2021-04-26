@@ -2,8 +2,11 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
+    public string Description { get; }
 
-    // properties, methods, etc. will go here.
-
+    public Pastry(string description)
+    {
+      Description = description;
+    }
   }
 }
