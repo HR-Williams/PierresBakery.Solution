@@ -10,6 +10,11 @@ namespace PierresBakery.Models
     {
     return _instances;
     }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
     public Bread(string description)
     {
       Description = description;
