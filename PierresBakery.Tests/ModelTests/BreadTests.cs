@@ -1,12 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 using System.Collections.Generic;
+using System;
 
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Bread.ClearAll();
+    }
 
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
@@ -24,16 +30,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-public void GetAll_ReturnsEmptyList_ItemList()
-{
-  // Arrange
-  List<Bread> newList = new List<Bread> { };
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Bread> newList = new List<Bread> { };
 
-  // Act
-  List<Bread> result = Bread.GetAll();
+      List<Bread> result = Bread.GetAll();
 
-  // Assert
-  CollectionAssert.AreEqual(newList, result);
-}
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
