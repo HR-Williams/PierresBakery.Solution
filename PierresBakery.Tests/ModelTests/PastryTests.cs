@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
+using System.Collections.Generic;
+using System;
 
 namespace PierresBakery.Tests
 {
@@ -20,6 +22,16 @@ namespace PierresBakery.Tests
       Pastry newPastry = new Pastry(description);
       string result = newPastry.Description;
       Assert.AreEqual(description, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Pastry> newList = new List<Pastry> { };
+
+      List<Pastry> result = Bread.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 } 
