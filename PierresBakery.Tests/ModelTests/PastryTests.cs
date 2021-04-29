@@ -30,7 +30,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetAll_ReturnsEmptyList_ItemList()
+    public void GetAll_ReturnsEmptyList_PastryList()
     {
       List<Pastry> newList = new List<Pastry> { };
 
@@ -40,7 +40,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetAll_ReturnsItems_ItemList()
+    public void GetAll_ReturnsPastrys_PastryList()
     {
       string description01 = "Croissant";
       string description02 = "Éclair";
