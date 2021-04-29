@@ -6,8 +6,13 @@ using System;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class PastryTests
+  public class PastryTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Pastry.ClearAll();
+    }
 
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
@@ -29,7 +34,7 @@ namespace PierresBakery.Tests
     {
       List<Pastry> newList = new List<Pastry> { };
 
-      List<Pastry> result = Bread.GetAll();
+      List<Pastry> result = Pastry.GetAll();
 
       CollectionAssert.AreEqual(newList, result);
     }
