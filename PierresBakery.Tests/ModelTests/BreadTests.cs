@@ -38,5 +38,19 @@ namespace PierresBakery.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsBread_BreadList()
+    {
+      string description01 = "Baguette";
+      string description02 = "Fougasse";
+      Bread newBread1 = new Bread(description01);
+      Bread newBread2 = new Bread(description02);
+      List<Bread> newList = new List<Bread> { newBread1, newBread2 };
+
+      List<Bread> result = Bread.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
