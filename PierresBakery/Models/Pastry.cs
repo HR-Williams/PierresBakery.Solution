@@ -5,6 +5,7 @@ namespace PierresBakery.Models
   public class Pastry
   {
     public string Description { get; }
+    public int Price { get; }
 
     private static List<Pastry> _instances = new List<Pastry> {};
 
