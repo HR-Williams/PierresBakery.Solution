@@ -30,6 +30,15 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
+    public void GetPrice_ReturnsPrice_Int()
+    {
+      int price = 2;
+      Pastry newPastry0 = new Pastry(price);
+      int result = newPastry0.Price;
+      Assert.AreEqual(price, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_PastryList()
     {
       List<Pastry> newList = new List<Pastry> { };
