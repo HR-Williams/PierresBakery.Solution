@@ -12,7 +12,7 @@ namespace PierresBakery.Models
     // public static List<Pastry> GetAll()
     // {
     // return _instances;
-    }
+    // }
 
     // public static void ClearAll()
     // {
@@ -24,4 +24,4 @@ namespace PierresBakery.Models
     //   _instances.Add(this);
     // }
   }
-// }
+}
