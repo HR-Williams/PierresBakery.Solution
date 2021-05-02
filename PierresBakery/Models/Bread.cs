@@ -1,10 +1,12 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
 
-// namespace PierresBakery.Models
-// {
-//   public class Bread
-//   {
+namespace PierresBakery.Models
+{
+  public class Bread
+  {
 //     // public string Description { get; }
+
+    public int Price { get; }
 //     private static List<Bread> _instances = new List<Bread> {};
 //     public static List<Bread> GetAll()
 //     {
@@ -21,5 +23,5 @@
 //     //   _instances.Add(this);
       
 //     // }
-//   }
-// }
+  }
+}
