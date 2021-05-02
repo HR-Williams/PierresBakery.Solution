@@ -1,43 +1,43 @@
-// using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using PierresBakery.Models;
-// using System.Collections.Generic;
-// using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PierresBakery.Models;
+using System.Collections.Generic;
+using System;
 
-// namespace PierresBakery.Tests
-// {
-//   [TestClass]
-//   public class BreadTests : IDisposable
-//   {
+namespace PierresBakery.Tests
+{
+  [TestClass]
+  public class BreadTests : IDisposable
+  {
 
-//     public void Dispose()
-//     {
-//       Bread.ClearAll();
-//     }
+    public void Dispose()
+    {
+      Bread.ClearAll();
+    }
 
-//     [TestMethod]
-//     public void BreadConstructor_CreatesInstanceOfBread_Bread()
-//     {
-//       Bread newBread = new Bread("test");
-//       Assert.AreEqual(typeof(Bread), newBread.GetType());
-//     }
-//     [TestMethod]
-//     public void GetDescription_ReturnsDescription_String()
-//     {
-//       string description = "Pierre's Loaf";
-//       Bread newBread = new Bread(description);
-//       string result = newBread.Description;
-//       Assert.AreEqual(description, result);
-//     }
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread(5);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Price()
+    {
+      int price = 5;
+      Bread newBread = new Bread(price);
+      int result = newBread.Price;
+      Assert.AreEqual(price, result);
+    }
 
-//     [TestMethod]
-//     public void GetAll_ReturnsEmptyList_ItemList()
-//     {
-//       List<Bread> newList = new List<Bread> { };
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Bread> newList = new List<Bread> { };
 
-//       List<Bread> result = Bread.GetAll();
+      List<Bread> result = Bread.GetAll();
 
-//       CollectionAssert.AreEqual(newList, result);
-//     }
+      CollectionAssert.AreEqual(newList, result);
+    }
 
 //     [TestMethod]
 //     public void GetAll_ReturnsBread_BreadList()
@@ -52,5 +52,5 @@
 
 //       CollectionAssert.AreEqual(newList, result);
 //     }
-//   }
-// }
+  }
+}
