@@ -4,8 +4,13 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public string Description { get; }
+    // public string Description { get; }
     public int Price { get; }
+    public Pastry(int price) 
+    {
+      Price = 2;
+      _instances.Add(this);
+    }
 
     private static List<Pastry> _instances = new List<Pastry> {};
 
@@ -18,10 +23,6 @@ namespace PierresBakery.Models
     {
       _instances.Clear();
     }
-    public Pastry(string description)
-    {
-      Description = description;
-      _instances.Add(this);
-    }
+    
   }
 }
