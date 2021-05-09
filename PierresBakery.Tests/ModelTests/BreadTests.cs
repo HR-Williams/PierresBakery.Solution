@@ -6,13 +6,13 @@ using System;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests : IDisposable
+  public class BreadTests
   {
 
-    public void Dispose()
-    {
-      Bread.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   Bread.ClearAll();
+    // }
 
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
@@ -25,19 +25,19 @@ namespace PierresBakery.Tests
     {
       int price = 5;
       Bread newBread = new Bread(price);
-      int result = newBread.Price;
+      int result = newBread.BreadPrice;
       Assert.AreEqual(price, result);
     }
 
-    [TestMethod]
-    public void GetAll_ReturnsEmptyList_ItemList()
-    {
-      List<Bread> newList = new List<Bread> { };
+    // [TestMethod]
+    // public void GetAll_ReturnsEmptyList_ItemList()
+    // {
+    //   List<Bread> newList = new List<Bread> { };
 
-      List<Bread> result = Bread.GetAll();
+    //   List<Bread> result = Bread.GetAll();
 
-      CollectionAssert.AreEqual(newList, result);
-    }
+    //   CollectionAssert.AreEqual(newList, result);
+    // }
 
 //     [TestMethod]
 //     public void GetAll_ReturnsBread_BreadList()
