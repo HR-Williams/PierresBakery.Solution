@@ -21,12 +21,21 @@ namespace PierresBakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void GetPrice_ReturnsPrice_Price()
+    public void GetBreadPrice_ReturnsBreadPrice_Int()
     {
       int price = 5;
       Bread newBread = new Bread(price);
       int result = newBread.BreadPrice;
       Assert.AreEqual(price, result);
+    }
+
+    [TestMethod]
+    public void GetBreadQuantity_ReturnsBreadQuantity_Int()
+    {
+      int quantity = 1;
+      Bread newBread = new Bread(quantity);
+      int result = newBread.BreadQuantity;
+      Assert.AreEqual(quantity, result);
     }
 
     // [TestMethod]
