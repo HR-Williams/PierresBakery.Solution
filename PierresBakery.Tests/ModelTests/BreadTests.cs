@@ -41,10 +41,14 @@ namespace PierresBakery.Tests
     [TestMethod]
 
     public void
-    TotalBreadPrice_ReturnsBreadPricTimesBreadQuantity_Int()
+    TotalBreadPrice_ReturnsBreadPriceTimesBreadQuantity_Int()
     {
-      int breadQuantity = 1;
+      int orderBreadQuantity = 1;
+      int totalBreadPriceTest = 5;
       Bread newBread = new Bread
+      (orderBreadQuantity);
+      int totalBreadPrice = newBread.TotalBreadPrice();
+      Assert.AreEqual(totalBreadPriceTest, totalBreadPrice);
     }
     // [TestMethod]
     // public void TotalBreadPrice_IsDivisibleByThree_True()

@@ -14,11 +14,13 @@ namespace PierresBakery.Models
       // Price = 5;
       }
 
-    // public int TotalBreadPrice()
-    // {
+    public int TotalBreadPrice()
+    {
+      int totalBreadPrice = BreadQuantity * BreadPrice;
+      return totalBreadPrice;
     //   //seeing if there are three or more
     //   //calculating quantity + price
     //   //return total price  
-    // }
+    }
   }
 }
