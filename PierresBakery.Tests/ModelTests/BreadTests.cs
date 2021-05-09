@@ -23,43 +23,21 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBreadPrice_ReturnsBreadPrice_Int()
     {
-      int price = 5;
-      Bread newBread = new Bread(price);
+      int breadPrice = 5;
+      Bread newBread = new Bread(breadPrice);
       int result = newBread.BreadPrice;
-      Assert.AreEqual(price, result);
+      Assert.AreEqual(breadPrice, result);
     }
 
     [TestMethod]
     public void GetBreadQuantity_ReturnsBreadQuantity_Int()
     {
-      int quantity = 1;
-      Bread newBread = new Bread(quantity);
+      int breadQuantity = 1;
+      Bread newBread = new Bread(breadQuantity);
       int result = newBread.BreadQuantity;
-      Assert.AreEqual(quantity, result);
+      Assert.AreEqual(breadQuantity, result);
     }
-
     // [TestMethod]
-    // public void GetAll_ReturnsEmptyList_ItemList()
-    // {
-    //   List<Bread> newList = new List<Bread> { };
-
-    //   List<Bread> result = Bread.GetAll();
-
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
-
-//     [TestMethod]
-//     public void GetAll_ReturnsBread_BreadList()
-//     {
-//       string description01 = "Baguette";
-//       string description02 = "Fougasse";
-//       Bread newBread1 = new Bread(description01);
-//       Bread newBread2 = new Bread(description02);
-//       List<Bread> newList = new List<Bread> { newBread1, newBread2 };
-
-//       List<Bread> result = Bread.GetAll();
-
-//       CollectionAssert.AreEqual(newList, result);
-//     }
+    // public void TotalBreadPrice_
   }
 }
