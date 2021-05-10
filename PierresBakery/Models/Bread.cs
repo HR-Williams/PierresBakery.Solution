@@ -11,7 +11,6 @@ namespace PierresBakery.Models
       public Bread(int breadQuantity) 
       {
       BreadQuantity = breadQuantity;
-      // Price = 5;
       }
 
     public int TotalBreadPrice()
@@ -25,9 +24,7 @@ namespace PierresBakery.Models
       {
         return BreadPrice * BreadQuantity;
       }
-    //   //seeing if there are three or more
-    //   //calculating quantity + price
-    //   //return total price  
+
     }
   }
 }
