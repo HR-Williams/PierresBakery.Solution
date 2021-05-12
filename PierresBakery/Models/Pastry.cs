@@ -14,5 +14,9 @@ namespace PierresBakery.Models
     PastryQuantity = pastryQuantity;
     }
     
+    public int TotalPastryPrice(){
+
+      return 66666;
+    }
   }
 }
