@@ -8,12 +8,6 @@ namespace PierresBakery.Tests
   [TestClass]
   public class BreadTests
   {
-
-    // public void Dispose()
-    // {
-    //   Bread.ClearAll();
-    // }
-
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {

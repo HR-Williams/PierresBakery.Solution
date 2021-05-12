@@ -9,37 +9,30 @@ namespace PierresBakery.Tests
   public class PastryTests
   {
 
-    // public void Dispose()
-    // {
-    //   Pastry.ClearAll();
-    // }
-
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry(2);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
     [TestMethod]
     public void GetPrice_ReturnsPrice_Int()
     {
-      int price = 2;
-      Pastry newPastry = new Pastry(price);
-      int result = newPastry.Price;
-      Assert.AreEqual(price, result);
+      int pastryPrice = 2;
+      Pastry newPastry = new Pastry(pastryPrice);
+      int result = newPastry.PastryPrice;
+      Assert.AreEqual(pastryPrice, result);
     }
 
+    [TestMethod]
+    public void GetPastryQuantity_ReturnsPastryQuantity_Int()
+    {
+      int pastryQuantity = 1;
+      Pastry newPastry = new Pastry(pastryQuantity);
+      int result = newPastry.PastryQuantity;
+      Assert.AreEqual(pastryQuantity, result);
+    }
 
-    // [TestMethod]
-    // public void GetAll_ReturnsPastrys_PastryList()
-    // {
-    //   int price01 = 2;
-    //   Pastry newPastry1 = new Pastry(2);
-    //   List<Pastry> newList = new List<Pastry> { newPastry1};
-
-    //   List<Pastry> result = Pastry.GetAll();
-
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+    
   }
 } 
