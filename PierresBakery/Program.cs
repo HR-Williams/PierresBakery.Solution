@@ -7,7 +7,7 @@ namespace PierresBakery {
   {
     public static void Main()
     {
-      Pastry pierresPastry = new Pastry(2);
+      // Pastry pierresPastry = new Pastry(2);
 
       Bread pierresLoaf = new Bread(5);
       // Console.WriteLine("Welcome to Pierre's Bakery");

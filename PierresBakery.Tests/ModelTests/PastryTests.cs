@@ -6,38 +6,29 @@ using System;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class PastryTests : IDisposable
+  public class PastryTests
   {
 
-    public void Dispose()
-    {
-      Pastry.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   Pastry.ClearAll();
+    // }
 
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry(99);
+      Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
-    [TestMethod]
-    public void GetPrice_ReturnsPrice_Int()
-    {
-      int price = 2;
-      Pastry newPastry = new Pastry(price);
-      int result = newPastry.Price;
-      Assert.AreEqual(price, result);
-    }
+    // [TestMethod]
+    // public void GetPrice_ReturnsPrice_Int()
+    // {
+    //   int price = 2;
+    //   Pastry newPastry = new Pastry(price);
+    //   int result = newPastry.Price;
+    //   Assert.AreEqual(price, result);
+    // }
 
-    [TestMethod]
-    public void GetAll_ReturnsEmptyList_PastryList()
-    {
-      List<Pastry> newList = new List<Pastry> { };
-
-      List<Pastry> result = Pastry.GetAll();
-
-      CollectionAssert.AreEqual(newList, result);
-    }
 
     // [TestMethod]
     // public void GetAll_ReturnsPastrys_PastryList()
