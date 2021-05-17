@@ -27,11 +27,14 @@ A little program that lets the user order and returns a total cost.
 * _Clone this project with the following command `$ git clone https://github.com/HR-Williams/PierresBakery.Solution`_
 * _Navigate to the top level of the repository_
 * _At the root directory for this project enter the command `$ dotnet build` then enter the command `$ dotnet run`_
+*_To run tests:_
+*_Navigate to PierresBakery.Tests directory in your terminal_
+*_Enter the command `$ dotnet test`_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _I would like to make the console app UI more readable and fun_
+* _I would like to implement only allowing number input from user_
 
 ## License
 
