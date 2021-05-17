@@ -15,16 +15,9 @@ namespace PierresBakery.Models
 
     public int TotalBreadPrice()
     {
-      if (BreadQuantity % 3 == 0)
-      {
-      int totalBreadPrice = (BreadQuantity - (BreadQuantity / 3)) * BreadPrice;
+      int breadDeal = BreadPrice * ((BreadQuantity - (BreadQuantity % 3)) / 3);
+      int totalBreadPrice = (BreadQuantity * BreadPrice) - breadDeal;
       return totalBreadPrice;
-      }
-      else
-      {
-        return BreadPrice * BreadQuantity;
-      }
-
     }
   }
 }
